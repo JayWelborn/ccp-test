@@ -19,4 +19,18 @@ connect.contact(function(contact) {
         var screenpopURL = baseURL + searchString;
         window.open(screenpopURL)
     });
+
+    contact.onAccepted(function(contact) {
+        console.log(contact.getContactId());
+        console.log(contact.getType());
+        console.log(contact.isSoftphoneCall());
+        console.log(contact.isInbound());
+        console.log(contact.getConnections());
+    });
+});
+
+connect.agent(function(agent) {
+    console.log(agent.getContacts());
+    console.log(agent.getConfiguration());
+    console.log(agent.getContacts());
 });
