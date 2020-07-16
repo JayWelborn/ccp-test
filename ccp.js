@@ -30,7 +30,9 @@ connect.contact(function(contact) {
 });
 
 connect.agent(function(agent) {
-    console.log(agent.getContacts());
-    console.log(agent.getConfiguration());
-    console.log(agent.getContacts());
+    agent.onConnecting(function(agent) {
+        console.log(agent.getContacts());
+        console.log(agent.getConfiguration());
+        console.log(agent.getContacts());
+    })
 });
