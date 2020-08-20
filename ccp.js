@@ -9,7 +9,8 @@ connect.core.initCCP(document.getElementById('containerDiv'), {
     loginPopup: true,
     softphone: {
         allowFramedSoftphone: true
-        }
+    },
+    loginPopupAutoClose: true    
 });
 connect.contact(function(contact) {
     contact.onConnecting(function(contact) {
