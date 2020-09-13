@@ -6,8 +6,8 @@ var instanceName = "jwelborn-sugar";
 /*************** End Mod Area ***************/
 connect.core.initCCP(document.getElementById('containerDiv'), {
     ccpUrl:"https://" + instanceName + ".awsapps.com/connect/ccp-v2/",
-    loginPopup: {
-        forceWindow: true,
+    loginPopup: true,
+    loginOptions: {
         autoClose: true,
         height: 676,
         width: 676,
