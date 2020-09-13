@@ -7,12 +7,8 @@ var instanceName = "jwelborn-sugar";
 connect.core.initCCP(document.getElementById('containerDiv'), {
     ccpUrl:"https://" + instanceName + ".awsapps.com/connect/ccp-v2/",
     loginPopup: true,
-//     loginOptions: {
-//         height: 676,
-//         width: 676,
-//         top: 0,
-//         left: 350
-//     },
+    loginOptions: {
+    },
     loginPopupAutoClose: true,
     softphone: {
         allowFramedSoftphone: true
