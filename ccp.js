@@ -8,10 +8,10 @@ connect.core.initCCP(document.getElementById('containerDiv'), {
     ccpUrl:"https://" + instanceName + ".awsapps.com/connect/ccp-v2/",
     loginPopup: true,
     loginOptions: {
-        height: 650px,
-        width: 650px,
-        left: 100px,
-        top: 50px
+        height: 650,
+        width: 650,
+        left: 100,
+        top: 50
     },
     loginPopupAutoClose: true,
     softphone: {
